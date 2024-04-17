@@ -14,5 +14,7 @@ build-x86_64: $(x86_64_asm_object_files)
 
 clean:
 	rm -r build
+	rm -r dist
+	rm targets/x86_64/iso/boot/kernel.bin
 
 all: build-x86_64
